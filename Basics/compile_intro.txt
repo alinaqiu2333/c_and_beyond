@@ -1,0 +1,4 @@
+gcc: GNU Compiler Collection
+gcc -o: `gcc -o Output HelloWorld.c` saves the output of HelloWorld.c into a excutable file Output.
+gcc -Wall: enables all compiler's warning messages
+
