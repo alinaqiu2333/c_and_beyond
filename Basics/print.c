@@ -10,6 +10,6 @@ int main(){
 	printf("just to see if two-digit after decimal point works %.2f\n", fl);
 	printf("and it DOES!!\n");
 	//fun fact: double (15-16 signif digit) is more percise than float (6-7 signif digit)
-
+	printf("Goodnight Moon\n");
 	return 0;
 }
