@@ -1,2 +1,3 @@
 Local variables for functions are stored in the: Stack
 A single stack frame stores local variables and arguments for: one function call
+The Code Segment starts at an address that is:
