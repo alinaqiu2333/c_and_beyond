@@ -1,0 +1,2 @@
+Local variables for functions are stored in the: Stack
+A single stack frame stores local variables and arguments for: one function call
