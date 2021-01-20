@@ -4,4 +4,4 @@ The Code Segment starts at an address that is: close to but not zero
 A variable assigned outside of main (and not inside another function) is accessible in: The main function and any other functions
 Global variables are not stored in the stack because: The stack contains only variables that are defined within functions, and they would only be accessible in the stack frame in which they were declared -- not globally.
 Dynamically-allocated data is stored in: The heap.
-Why is the return type for malloc a void *? Check all the correct statements.
+Why is the return type for malloc a void *: malloc returns a void * because the same function is used to allocate memory for many different data types, and malloc returns the address of the memory that is allocated but it doesn't know the type of the pointer that will be needed to access that memory properly.
