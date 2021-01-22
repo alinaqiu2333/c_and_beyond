@@ -6,3 +6,4 @@ Select the true statements about any program that defines the following C functi
 void helper(int *arr) {
     arr = malloc(sizeof(int));
 }
+arr might be an array of integers or it might be a single pointer to an integer. 
