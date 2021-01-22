@@ -1,1 +1,2 @@
 When we allocate memory we need to provide the size of the block of memory we need. When we call free, we provide the address of the block of memory we are deallocating.
+An ENOMEM error occurs when the program runs out of memory.
