@@ -1,0 +1,1 @@
+When we allocate memory we need to provide the size of the block of memory we need.
