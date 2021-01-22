@@ -7,3 +7,4 @@ void helper(int *arr) {
     arr = malloc(sizeof(int));
 }
 arr might be an array of integers or it might be a single pointer to an integer. 
+This code has a memory leak.
