@@ -12,7 +12,4 @@ arr is local to helper and is not returned.
 f
 f
 f
-f
-f
-f
 
