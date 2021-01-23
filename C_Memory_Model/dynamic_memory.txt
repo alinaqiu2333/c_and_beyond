@@ -12,7 +12,6 @@ arr is local to helper and is not returned. s
 s
 s
 d
-d
 
 
 
