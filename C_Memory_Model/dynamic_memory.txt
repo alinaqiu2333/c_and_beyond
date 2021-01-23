@@ -8,4 +8,7 @@ void helper(int *arr) {
 }
 arr might be an array of integers or it might be a single pointer to an integer. 
 This code has a memory leak.
-arr is local to helper and is not returned.
+arr is local to helper and is not returned.  
+
+hey
+
