@@ -9,7 +9,7 @@ void helper(int *arr) {
 arr might be an array of integers or it might be a single pointer to an integer. 
 This code has a memory leak.
 arr is local to helper and is not returned. 
-f
-f
-f
 
+The expression *p[0] is the same as p[0][0].
+We typically free the pieces of a nested data-structure from the "bottom-up".
+Memory left allocated on the heap at the end of a running program is automatically deallocated.
