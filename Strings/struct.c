@@ -15,3 +15,9 @@ int main() {
     strcpy(best_friend.address, "1337 University Avenue");
     return 0;
 }
+
+// void update_contact(struct contact *friend, char *name, int number, char* address){
+//     (*friend).phone_number = number;
+//     strcpy(friend->name, name);
+//     strcpy(friend->address, address);
+// }
