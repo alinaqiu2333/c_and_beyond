@@ -3,3 +3,7 @@ include PCRS in CSC209, course notes and test review
 # topics included:
 Arrays
 Basics
+s
+s
+s
+s
