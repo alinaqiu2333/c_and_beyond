@@ -1,24 +1,36 @@
 #include <stdio.h>
 
 int main() {
-    FILE *output_file;
-    int error;
-    int total = 50;
-    float small_number = 0.125;
+    FILE *scores_file, *output_file;
+    int error, total;
+    char name[81];
   
-    output_file = fopen("myfile.txt", "w");
-    if (output_file == NULL) {
-        fprintf(stderr, "Error opening file\n");
+    scores_file = fopen("top10.txt", "r");
+    if (scores_file == NULL) {
+        fprintf(stderr, "Error opening input file\n");
         return 1;
     }
   
-    fprintf(output_file, "This will be the first line in the file\n");
-    fprintf(output_file, "The integer is %d\n", total);
-    fprintf(output_file, "The small float number is %f\n", small_number);
+    output_file = fopen("names.txt", "w");
+    if (output_file == NULL) {
+        fprintf(stderr, "Error opening output file\n");
+        return 1;
+    }
   
+    while (fscanf(scores_file, "%80s %d", name, &total) == 2) {
+        printf("Name: %s. Score: %d.\n", name, total);
+        fprintf(output_file, "%s\n", name);
+    }
+  
+    error = fclose(scores_file);
+    if (error != 0) {
+        fprintf(stderr, "fclose failed on input file\n");
+        return 1;
+    }
+
     error = fclose(output_file);
     if (error != 0) {
-        fprintf(stderr, "fclose failed\n");
+        fprintf(stderr, "fclose failed on output file\n");
         return 1;
     }
 
