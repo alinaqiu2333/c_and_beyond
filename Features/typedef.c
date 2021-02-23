@@ -15,6 +15,5 @@ typedef struct {
 	int level;
 	int max_team_size;
 } TFT;
-// now TFT is a type of class which has rank, level and max team size as attributes
 TFT alinasgame;
 TFT alinasgame_p;
