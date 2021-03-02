@@ -1,0 +1,2 @@
+program: the executable instructions of a program. Either sourse code or compiled machine code
+process: running instance of a program
