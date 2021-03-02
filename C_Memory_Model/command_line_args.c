@@ -11,8 +11,6 @@
    
    For example, get_sum("   123  5  ") should return the integer 128, 
    and get_sum("-14 30") should return the integer 16.
-   
-   Hint: use strtol().
 */
 int get_sum(const char *input_line) {
     char *second_num;
