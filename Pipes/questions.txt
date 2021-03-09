@@ -1,3 +1,7 @@
 A file descriptor is one field in a FILE struct.
 The global variable stdin is of type FILE *.
 The file descriptor for standard output has the value 1.
+
+The pipe call must be made before the fork call because the child inherits open file descriptors from the parent.
+Pipes are unidirectional, meaning that you cannot use the same pipe to both write data to another process and to read data from that process.
+he pipe call must be made before the fork call because the child inherits open file descriptors from the parent.
