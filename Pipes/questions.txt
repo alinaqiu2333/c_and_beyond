@@ -1,0 +1,3 @@
+A file descriptor is one field in a FILE struct.
+The global variable stdin is of type FILE *.
+The file descriptor for standard output has the value 1.
