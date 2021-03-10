@@ -13,6 +13,6 @@ A write call will block if the pipe is full.
 dup2 is used when you want to reset standard input for a process to read from a file.
 dup2 takes two indices in the file descriptor table and resets one to refer to the same file object as the other.
 
-It is important to close all file descriptors for writing on a pipe except the one that we plan to use because... the read end of the pipe won't know when all the data has been sent until all write descriptors are closed.s
+It is important to close all file descriptors for writing on a pipe except the one that we plan to use because... the read end of the pipe won't know when all the data has been sent until all write descriptors are closed.
 
 Open file descriptors are inherited across the fork call. We have to call fork after pipe for the pipe to have the right file descriptors open in both processes.
