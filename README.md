@@ -4,3 +4,4 @@ include PCRS in CSC209, course notes and test review
 #Arrays
 #Basics
 #Memory models
+#Pointers 
